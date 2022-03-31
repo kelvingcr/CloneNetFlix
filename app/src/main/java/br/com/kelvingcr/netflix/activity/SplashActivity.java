@@ -2,7 +2,10 @@ package br.com.kelvingcr.netflix.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 
 import br.com.kelvingcr.netflix.R;
@@ -13,6 +16,11 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        new Handler(Looper.getMainLooper()).postDelayed(() ->{
+            finish();
+            startActivity(new Intent(this, MainActivity.class));
+        }, 3000);
 
     }
     @Override

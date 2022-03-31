@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="cor_bg_app">@android:color/black</color>
+    <color name="colorPrimary">#E00915</color>
+    <color name="colorIconeOnBnv">#ffffff</color>
+    <color name="colorIconeOffBnv">#626262</color>
 </resources>
