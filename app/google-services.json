@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "698272638085",
+    "project_id": "netflix-14fc4",
+    "storage_bucket": "netflix-14fc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698272638085:android:efd8ab2226c5f69c6835ec",
+        "android_client_info": {
+          "package_name": "br.com.kelvingcr.netflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698272638085-co6nt6e0q2evftuk4h3p24djsncmsr6n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.kelvingcr.netflix",
+            "certificate_hash": "af2a0bb629417567e208776e2239dc4582ea22ee"
+          }
+        },
+        {
+          "client_id": "698272638085-sd2cenqqgft075hgc0907vsqkr9b516c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGisCcw13S5WX1DjdE2fQLIDioc5y7-Cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698272638085-sd2cenqqgft075hgc0907vsqkr9b516c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
