@@ -24,11 +24,11 @@
         android:background="@android:color/transparent"
         android:text="AJUDA"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/btn_entrar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cadastrar_filme"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_entrar"
+        android:id="@+id/btn_cadastrar_filme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"

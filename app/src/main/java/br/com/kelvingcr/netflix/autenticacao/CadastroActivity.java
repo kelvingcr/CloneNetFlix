@@ -26,7 +26,7 @@ public class CadastroActivity extends AppCompatActivity {
     }
 
     private void configCliques() {
-        findViewById(R.id.btn_entrar).setOnClickListener(view -> {
+        findViewById(R.id.btn_cadastrar_filme).setOnClickListener(view -> {
             finish();
         });
 
