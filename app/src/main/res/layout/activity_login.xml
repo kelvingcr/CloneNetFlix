@@ -78,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/btn_btn"
+                android:background="@drawable/bg_btn"
                 android:text="Entrar"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
@@ -97,14 +97,14 @@
                 android:text="Precisa de ajuda?"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                app:layout_constraintBottom_toTopOf="@+id/button2"
+                app:layout_constraintBottom_toTopOf="@+id/btn_cadastro"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button" />
 
             <android.widget.Button
-                android:id="@+id/button2"
+                android:id="@+id/btn_cadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -131,7 +131,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button2" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_cadastro" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
