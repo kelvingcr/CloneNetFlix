@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void configCliques(){
-        findViewById(R.id.btn_cadastro).setOnClickListener(view -> {
+        findViewById(R.id.btn_continuar).setOnClickListener(view -> {
             startActivity(new Intent(this, CadastroActivity.class));
         });
     }
