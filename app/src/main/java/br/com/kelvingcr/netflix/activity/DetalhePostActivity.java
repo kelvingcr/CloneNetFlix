@@ -23,6 +23,7 @@ import java.util.List;
 import br.com.kelvingcr.netflix.R;
 import br.com.kelvingcr.netflix.adapter.AdapterPost;
 import br.com.kelvingcr.netflix.helper.FirebaseHelper;
+import br.com.kelvingcr.netflix.model.Download;
 import br.com.kelvingcr.netflix.model.Post;
 
 public class DetalhePostActivity extends AppCompatActivity {
@@ -57,7 +58,7 @@ public class DetalhePostActivity extends AppCompatActivity {
 
         recuperaPost();
 
-     //   recuperaDownloads();
+     recuperaDownloads();
 
     }
 
@@ -71,7 +72,7 @@ public class DetalhePostActivity extends AppCompatActivity {
         if(!downloadList.contains(post.getId())){
 
             downloadList.add(post.getId());
-           // Download.salvar(downloadList);
+           Download.salvar(downloadList);
 
             Toast.makeText(getBaseContext(), "Download efetuado com sucesso!", Toast.LENGTH_SHORT).show();
         }else {
