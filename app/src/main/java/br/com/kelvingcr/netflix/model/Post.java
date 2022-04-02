@@ -3,9 +3,11 @@ package br.com.kelvingcr.netflix.model;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.io.Serializable;
+
 import br.com.kelvingcr.netflix.helper.FirebaseHelper;
 
-public class Post {
+public class Post implements Serializable {
 
     private String id;
     private String titulo;

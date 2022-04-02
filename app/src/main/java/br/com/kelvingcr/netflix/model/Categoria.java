@@ -3,11 +3,12 @@ package br.com.kelvingcr.netflix.model;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 
+import java.io.Serializable;
 import java.util.List;
 
 import br.com.kelvingcr.netflix.helper.FirebaseHelper;
 
-public class Categoria {
+public class Categoria implements Serializable {
 
 
     private String id;

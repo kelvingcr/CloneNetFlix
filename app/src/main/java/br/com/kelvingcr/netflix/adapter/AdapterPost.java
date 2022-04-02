@@ -1,5 +1,7 @@
 package br.com.kelvingcr.netflix.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,27 +14,39 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import br.com.kelvingcr.netflix.R;
+import br.com.kelvingcr.netflix.activity.DetalhePostActivity;
 import br.com.kelvingcr.netflix.model.Post;
 
 public class AdapterPost extends RecyclerView.Adapter<AdapterPost.MyViewHolder> {
 
     private final List<Post> postList;
+    private final Context context;
 
-    public AdapterPost(List<Post> postList) {
+    public AdapterPost(List<Post> postList, Context context) {
         this.postList = postList;
+        this.context = context;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(br.com.kelvingcr.netflix.R.layout.adapter_post, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_post, parent, false);
         return new MyViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Post post = postList.get(position);
-        Picasso.get().load(post.getImagem()).into(holder.imagem);
+        Picasso.get()
+                .load(post.getImagem())
+                .into(holder.imagem);
+
+        holder.itemView.setOnClickListener(view -> {
+            Intent intent = new Intent(context, DetalhePostActivity.class);
+            intent.putExtra("postSelecionado", post);
+            context.startActivity(intent);
+        });
+
     }
 
     @Override
@@ -50,5 +64,4 @@ public class AdapterPost extends RecyclerView.Adapter<AdapterPost.MyViewHolder> 
             imagem = itemView.findViewById(R.id.imagem);
         }
     }
-
 }
