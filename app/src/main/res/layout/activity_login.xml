@@ -67,14 +67,14 @@
                 android:inputType="textPassword"
                 android:padding="16dp"
                 android:textColor="@color/white"
-                app:layout_constraintBottom_toTopOf="@+id/btn_cadastrar_filme"
+                app:layout_constraintBottom_toTopOf="@+id/btn_cadastrar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edt_email" />
 
             <android.widget.Button
-                android:id="@+id/btn_cadastrar_filme"
+                android:id="@+id/btn_cadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -102,7 +102,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_cadastrar_filme" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_cadastrar" />
 
             <android.widget.Button
                 android:id="@+id/btn_continuar"

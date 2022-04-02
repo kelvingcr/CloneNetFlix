@@ -53,9 +53,10 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/bg_btn3"
                 android:hint="Sinopse"
+                android:textColor="@color/white"
                 android:textColorHint="#454545"
                 android:padding="16dp"
-                app:layout_constraintBottom_toTopOf="@+id/btn_cadastrar_filme"
+                app:layout_constraintBottom_toTopOf="@+id/btn_cadastrar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +69,7 @@
                 android:layout_marginTop="32dp"
                 android:background="@drawable/bg_btn3"
                 android:hint="Título"
+                android:textColor="@color/white"
                 android:padding="16dp"
                 android:textColorHint="#454545"
                 app:layout_constraintBottom_toTopOf="@+id/edt_genero"
@@ -83,6 +85,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/bg_btn3"
                 android:hint="Elenco"
+                android:textColor="@color/white"
                 android:textColorHint="#454545"
                 android:padding="16dp"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -111,6 +114,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/bg_btn3"
                     android:hint="Ano"
+                    android:textColor="@color/white"
                     android:textColorHint="#454545"
                     android:layout_marginEnd="8dp"
                     android:padding="16dp"
@@ -125,6 +129,7 @@
                     android:background="@drawable/bg_btn3"
                     android:layout_marginStart="8dp"
                     android:hint="Duração"
+                    android:textColor="@color/white"
                     android:textColorHint="#454545"
                     android:padding="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/edt_ano"
@@ -141,6 +146,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/bg_btn3"
                 android:hint="Gênero"
+                android:textColor="@color/white"
                 android:padding="16dp"
                 android:textColorHint="#454545"
                 app:layout_constraintBottom_toTopOf="@+id/edt_elenco"
@@ -150,15 +156,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/edt_titulo" />
 
             <android.widget.Button
-                android:id="@+id/btn_cadastrar_filme"
+                android:id="@+id/btn_cadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/bg_edit"
-                android:onClick="validaDados"
                 android:text="CADASTRAR"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
+
                 android:textSize="16dp"
                 app:layout_constraintBottom_toTopOf="@+id/progressBar"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -176,7 +182,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_cadastrar_filme" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_cadastrar"
+                android:visibility="gone"
+                tools:visibility="visible"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
