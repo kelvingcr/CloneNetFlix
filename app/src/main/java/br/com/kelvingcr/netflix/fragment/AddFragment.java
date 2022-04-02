@@ -1,7 +1,12 @@
 package br.com.kelvingcr.netflix.fragment;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.ImageDecoder;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -19,6 +24,7 @@ import android.widget.Toast;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.normal.TedPermission;
 
+import java.io.IOException;
 import java.util.List;
 
 import br.com.kelvingcr.netflix.R;
@@ -31,6 +37,7 @@ public class AddFragment extends Fragment {
 
     private ImageView imagem;
     private static final int REQUEST_GALERIA = 100;
+    private String caminhoImagem;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -88,8 +95,39 @@ public class AddFragment extends Fragment {
     }
 
 
-    private void abrirGaleria(){
+    private void abrirGaleria() {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(intent, REQUEST_GALERIA);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == REQUEST_GALERIA) {
+
+                Uri localImagemSeleciona = data.getData();
+                caminhoImagem = localImagemSeleciona.toString();
+
+                try {
+
+                    Bitmap bitmap;
+                    if (Build.VERSION.SDK_INT < 28) {
+                        bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), localImagemSeleciona);
+
+                    } else {
+                        ImageDecoder.Source source = ImageDecoder.createSource(getActivity().getContentResolver(), localImagemSeleciona);
+                        bitmap = ImageDecoder.decodeBitmap(source);
+
+                    }
+
+                    imagem.setImageBitmap(bitmap);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }
