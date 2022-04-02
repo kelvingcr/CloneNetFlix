@@ -20,6 +20,7 @@
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/drawable/ic_download_white.xml" value="0.261" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/drawable/ic_inicio.xml" value="0.254" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/drawable/ic_like_white.xml" value="0.261" />
+        <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/drawable/ic_notificacao.xml" value="0.261" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/drawable/ic_search.xml" value="0.261" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/drawable/item_selected.xml" value="0.254" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/layout/activity_cadastro.xml" value="0.3875" />
@@ -29,8 +30,10 @@
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/layout/adapter_categoria.xml" value="0.3875" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/layout/adapter_listagem_busca.xml" value="0.3875" />
+        <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/layout/adapter_listagem_em_breve.xml" value="0.3875" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/layout/adapter_post.xml" value="0.3875" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/layout/fragment_add.xml" value="0.33" />
+        <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/layout/fragment_breve.xml" value="0.33" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/layout/fragment_busca.xml" value="0.3875" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/layout/fragment_inicio.xml" value="0.3875" />
         <entry key="..\:/Users/Kelvin/AndroidStudioProjects/Netflix/app/src/main/res/menu/menu_main.xml" value="0.2875" />
