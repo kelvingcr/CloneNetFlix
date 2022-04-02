@@ -10,6 +10,7 @@ import android.os.Bundle;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import br.com.kelvingcr.netflix.R;
+import br.com.kelvingcr.netflix.model.Categoria;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +26,6 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = navHostFragment.getNavController();
 
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
-
     }
+
 }
