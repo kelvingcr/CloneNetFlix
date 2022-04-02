@@ -32,13 +32,22 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:cardCornerRadius="8dp"
                 app:layout_constraintVertical_chainStyle="packed">
 
-                <ImageView
-                    android:id="@+id/imagem"
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop" />
+                    android:padding="32dp">
+
+                    <ImageView
+                        android:id="@+id/fake"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_camera"/>
+
+                </FrameLayout>
+
 
             </androidx.cardview.widget.CardView>
 
